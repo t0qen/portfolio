@@ -1,100 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Aymeric CAMARET</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/png" href="images/code-block-tags.svg" />
-    </head>
-    <body>
-        
-        <div class="desktop" id="desktop">
-            <div class="window" id="window-fetch">
-                <div class="window-bar">
-                    <!-- <div class="window-buttons">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aymeric CAMARET</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/code-block-tags.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="desktop" id="desktop">
+        <div class="window" id="window-fetch">
+            <div class="window-bar">
+                <!-- <div class="window-buttons">
                         <button class="window-button-close" id="close-close">
                             <img src="images/close.svg" alt="close">
                         </button>
                     </div> -->
-                    <div class="window-title">aymeric@host:~</div>
+                <div class="window-title">aymeric@host:~</div>
+            </div>
+            <div class="window-prompt" id="fetch-header">
+                <p>aymeric@host:~$ fetch</p>
+            </div>
+            <div class="window-content" id="fetch-content">
+
+                <div class="fetch-picture">
+                    <img src="images/profile.png" id="fetch-picture" alt="temp picture">
                 </div>
-                <div class="window-content">
-                    <div class="fetch-header">
-                        <p>aymeric@host:~$ fetch</p>
-                    </div>
-                    <div class="fetch-picture">
-                    </div>
-                    <div class="fetch-info">
-                        <p>Fetching information...</p>
-                    </div>
+                <div class="fetch-info">
+                    <p>Name: Aymeric CAMARET</p>
+                    <p>Age: 16</p>
                 </div>
             </div>
+        </div>
 
-            <div class="window" id="window-projects">
-                <div class="window-bar">
-                    <!-- <div class="window-buttons">
+        <div class="window" id="window-projects">
+            <div class="window-bar">
+                <!-- <div class="window-buttons">
                         <button class="window-button-close" id="close-close">
                             <img src="images/close.svg" alt="close">
                         </button>
                     </div> -->
-                    <div class="window-title">aymeric@host:~</div>
-                </div>
-                <div class="window-content">
-                    <div class="projects-header">
-                        <p>aymeric@host:~$ ls ~/Projects</p>
-                    </div>
-                    <div class="projects-list">
-                        <p>Fetching information...</p>
-                    </div>
-                </div>
-            
+                <div class="window-title">aymeric@host:~</div>
             </div>
-
-            <div class="window" id="window-skills">
-                <div class="window-bar">
-                    <!-- <div class="window-buttons">
-                        <button class="window-button-close" id="close-close">
-                            <img src="images/close.svg" alt="close">
-                        </button>
-                    </div> -->
-                    <div class="window-title">aymeric@host:~</div>
-                </div>
-                <div class="window-content">
-                    <div class="skills-header">
-                        <p>aymeric@host:~$ cat skills.txt</p>
-                    </div>
-                    <div class="skills-list">
-                        <p>Fetching information...</p>
-                    </div>
-                </div>
-
+            <div class="window-prompt" id="projects-header">
+                <p>aymeric@host:~$ ls ~/Projects</p>
             </div>
+            <div class="window-content">
 
-            <div class="window" id="window-about">
-                <div class="window-bar">
-                    <!-- <div class="window-buttons">
-                        <button class="window-button-close" id="close-close">
-                            <img src="images/close.svg" alt="close">
-                        </button>
-                    </div> -->
-                    <div class="window-title">aymeric@host:~</div>
+                <div class="projects-list">
+                    <p>Fetching information...</p>
                 </div>
-                <div class="window-content">
-                    <div class="about-header">
-                        <p>aymeric@host:~$ cat about.txt</p>
-                    </div>
-                    <div class="about-content">
-                        <p>Fetching information...</p>
-                    </div>
-                </div>
-            
             </div>
 
         </div>
-        
-        <script src="script.js"></script>
-    </body>
+
+        <div class="window" id="window-skills">
+            <div class="window-bar">
+                <!-- <div class="window-buttons">
+                        <button class="window-button-close" id="close-close">
+                            <img src="images/close.svg" alt="close">
+                        </button>
+                    </div> -->
+                <div class="window-title">aymeric@host:~</div>
+            </div>
+            <div class="window-prompt" id="skills-header">
+                <p>aymeric@host:~$ cat skills.txt</p>
+            </div>
+            <div class="window-content">
+
+                <div class="skills-list">
+                    <p>Fetching information...</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="window" id="window-about">
+            <div class="window-bar">
+                <!-- <div class="window-buttons">
+                        <button class="window-button-close" id="close-close">
+                            <img src="images/close.svg" alt="close">
+                        </button>
+                    </div> -->
+                <div class="window-title">aymeric@host:~</div>
+            </div>
+            <div class="window-prompt" id="about-header">
+                <p>aymeric@host:~$ cat about.txt</p>
+            </div>
+            <div class="window-content">
+                <div class="about-content">
+                    <p>Fetching information...</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
