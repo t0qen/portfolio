@@ -24,6 +24,7 @@ function reset_windows_pos() {
 window.addEventListener('load', () => {
     setTimeout(reset_windows_pos, 100);
 });
+
 windows.forEach(div => {
 
     div.addEventListener('pointerdown', (e) => {
