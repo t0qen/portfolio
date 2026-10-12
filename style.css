@@ -91,7 +91,7 @@ body {
 
 .window-prompt {
     font-size: 1rem;
-    color: #ffffff;
+    color: #c4c4c4;
     user-select: text;
     padding: 0.5rem;
 }
@@ -118,6 +118,45 @@ body {
     min-height: 600px;
 }
 
+.projects-table {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.projects-table-header {
+    border: 1px solid;
+    height: 20px;
+}
+
+.projects-table-link {
+    text-align: center;
+}
+
+.projects-table-platform {
+    color: #cccccc;
+}
+
+.projects-table-desc {
+    font-size: 0.75rem;
+}
+
+#projects-table-header-project {
+    width: 25%;
+}
+
+#projects-table-header-platform {
+    width: 15%;
+}
+
+#projects-table-header-link {
+    width: 10%;
+}
+
+#projects-table-header-description {
+    width: 50%;
+}
 #window-fetch {
     width: 30vw; 
     height: 20vw;
