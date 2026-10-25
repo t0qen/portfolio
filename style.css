@@ -113,7 +113,7 @@ body {
     width: 50vw; 
     height: 40vw;
     max-width: 800px;
-    max-height: 00px;
+    max-height: 1000px;
     min-width: 600px;
     min-height: 600px;
 }
@@ -157,6 +157,13 @@ body {
 #projects-table-header-description {
     width: 50%;
 }
+
+#projects-random-text {
+    font-size: small;
+    color: #979797;
+    text-align: center;
+}
+
 #window-fetch {
     width: 30vw; 
     height: 20vw;
@@ -166,6 +173,9 @@ body {
     min-height: 300px;
 }
 
+.fetch-info {
+    max-width: 250px;
+}
 
 #fetch-picture {
     image-rendering: pixelated;
