@@ -58,7 +58,7 @@
             <div class="window-prompt" id="projects-header">
                 <p>aymeric@host:~$ ls ~/Projects</p>
             </div>
-            <p id="projects-random-text">put your cursor on the table to see pictures of the projects</p>
+            <p id="projects-random-text">(put your cursor on projects to see pictures and get more infos)</p>
             <div class="window-content">
                 <table class="projects-table">
                     <tr>
@@ -72,7 +72,8 @@
                         <td class="projects-table-platform">Python, Web</td>
                         <td class="projects-table-link"><a href="https://github.com/t0qen/camover" target="_blank">github</a></td>
                         <td class="projects-table-desc">
-                            It's a tracked robot remotly controlled via a camera. It's based on Raspberry Zero that runs a website.
+                            <!-- It's a  tracked robot remotly controlled via a camera. It's based on Raspberry Zero that runs a website. -->
+                            Remotly controlled tracked robot based on a RPI Zero that runs a website.
                         </td>
                     </tr>
                     <tr>
@@ -80,7 +81,8 @@
                         <td class="projects-table-platform">Meshtastic</td>
                         <td class="projects-table-link"><a href="https://github.com/t0qen/gps-cat-collar" target="_blank">github</a></td>
                         <td class="projects-table-desc">
-                            It's a tiny tracker I put on my young cat to find her when she go out. It's based on a XIAO, a Lora module and a GPS that sends realtime position to my home assistant trought a Meshtastic node (an other XIAO).
+                            Tiny realtime tracker based on XIAO and Lora module to send position to home-assistant via a Meshtastic node.
+                            <!-- It's a tiny tracker I put on my young cat to find her when she go out. It's based on a XIAO, a Lora module and a GPS that sends realtime position to my home assistant trought a Meshtastic node (an other XIAO). -->
                         </td>
                     </tr>
                     <tr>
@@ -88,7 +90,8 @@
                         <td class="projects-table-platform">C++</td>
                         <td class="projects-table-link"><a href="https://github.com/t0qen/connected-cat-flap" target="_blank">github</a></td>
                         <td class="projects-table-desc">
-                            It's a XIAO linked to a gyroscope stuck on my cat flap to send my a notification on my phone, throught ntfy, everytime one of my cat opens it. It's send data to home assistant to do stats.
+                            <!-- It's a XIAO linked to a gyroscope stuck on my cat flap to send my a notification on my phone, throught ntfy, everytime one of my cat opens it. It's send data to home assistant to do stats. -->
+                            Detects the opening of my cat flap thanks to a gyroscope and send notifications and data to home-assistant.
                         </td>
                     </tr>
                     <tr>
@@ -96,7 +99,8 @@
                         <td class="projects-table-platform">Python</td>
                         <td class="projects-table-link"><a href="https://github.com/t0qen/surf-review" target="_blank">github</a></td>
                         <td class="projects-table-desc">
-                            A script hosted on my server that runs everyday and send me a notification with a review of current surf conditions, in a "intelligent" way. 
+                            A script that runs everyday and scores the current meteo conditions for surfing. Send a notification with the result.  
+                            <!-- A script hosted on my server that runs everyday and send me a notification with a review of current surf conditions, in a "intelligent" way.  -->
                         </td>
                     </tr>
                     <tr>
@@ -104,7 +108,8 @@
                         <td class="projects-table-platform">C++</td>
                         <td class="projects-table-link"><a href="https://github.com/t0qen/beach-weather-probe" target="_blank">github</a></td>
                         <td class="projects-table-desc">
-                            Contrary to measuring wind trought an on-ground anemometer, it uses a load cell and a kite to determine the real wind force. The more complex part of this project is about process and view data. On of solutions I found was to use Grafana and InfluxDB.  
+                            Measures the wind force throught a load cell and a kite and send data to grafana instance on my server.
+                            <!-- Contrary to measuring wind trought an on-ground anemometer, it uses a load cell and a kite to determine the real wind force. The more complex part of this project is about process and view data. On of solutions I found was to use Grafana and InfluxDB.   -->
                         </td>
                     </tr>
                     <tr>
@@ -112,7 +117,8 @@
                         <td class="projects-table-platform">Python, C++</td>
                         <td class="projects-table-link"><a href="https://github.com/t0qen/bedroom-dashboard" target="_blank">github</a></td>
                         <td class="projects-table-desc">
-                            Instead of always go to home assitant app to control all my connected devices on my bedroom, I built "bedroom-dashboard" that looks like a macropad. It's based on a Raspberry Pico, a XIAO and a e-ink screen.
+                            A home assisant dashboard based on a RPI Pico, a XIAO and a e-ink display. Inpsired by stream decks.
+                            <!-- Instead of always go to home assitant app to control all my connected devices on my bedroom, I built "bedroom-dashboard" that looks like a macropad. It's based on a Raspberry Pico, a XIAO and a e-ink screen. -->
                         </td>
                     </tr>
                     <tr>
@@ -120,7 +126,8 @@
                         <td class="projects-table-platform">Godot</td>
                         <td class="projects-table-link"><a href="https://github.com/t0qen/juxtra-game" target="_blank">github</a></td>
                         <td class="projects-table-desc">
-                            This project is old now (1-2 years) and was a complete 2d soccer game, browser playable, inspired by Rocket League Sideswipe. 
+                            A 2d soccer game with advanced moving features inspired by Rocket League Sideswipe
+                            <!-- This project is old now (1-2 years) and was a complete 2d soccer game, browser playable, inspired by Rocket League Sideswipe.  -->
                         </td>
                     </tr>
                     <tr>
@@ -128,7 +135,8 @@
                         <td class="projects-table-platform">Docker</td>
                         <td class="projects-table-link"><a href="https://lostpacket.org" target="_blank">homepage</a></td>
                         <td class="projects-table-desc">
-                            It's composed of two servers for now, a Raspberry Pi 5 and a really old but upgraded laptop I got for free. I use it to host everythings I can, from Minecraft servers to *arr stack via camera management and tons of other things.
+                            Two servers on my house that hosts a lot of things I use everyday and which fosters my digital independence.
+                            <!-- It's composed of two servers for now, a Raspberry Pi 5 and a really old but upgraded laptop I got for free. I use it to host everythings I can, from Minecraft servers to *arr stack via camera management and tons of other things. -->
                         </td>
                     </tr>
                 </table>
