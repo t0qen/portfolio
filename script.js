@@ -50,3 +50,12 @@ document.addEventListener('pointermove', (e) => {
 document.addEventListener('pointerup', () => {
     current_div = null;
 });
+
+
+
+// projects
+const projects = document.querySelectorAll(".project-details");
+
+for (let i = 0; i < projects.length; i++) {
+    projects[i].classList.add("project-hided");
+}

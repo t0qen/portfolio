@@ -14,6 +14,13 @@ body {
     font-family: "JetBrains Mono", monospace;
 }
 
+a {
+    color: rgb(255, 231, 126);
+}
+a:hover {
+    font-style: oblique;
+}
+
 .desktop {
     position: relative;
     width: 100%;
@@ -110,58 +117,94 @@ body {
 
 #window-projects {
     width: 50vw; 
-    height: 40vw;
+    height: 25vw;
     max-width: 800px;
-    max-height: 1000px;
+    max-height: 450px;
     min-width: 600px;
-    min-height: 600px;
+    min-height: 450px;
 }
 
-.projects-table {
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    border-collapse: collapse;
+
+#project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    align-items: center;
+    /* gap: 10em; */
 }
 
-.projects-table-header {
-    border: 1px solid;
-    height: 20px;
+.project-hided {
+    display: none;
+}
+.project-details2 {
+    display: flex;
+    justify-content: center;
 }
 
-.projects-table-link {
-    text-align: center;
+.project-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    width: 90%;
 }
 
-.projects-table-platform {
-    color: #cccccc;
+.project-details-text {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
 }
 
-.projects-table-desc {
-    font-size: 0.75rem;
+.project-title {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 800;
+    
 }
 
-#projects-table-header-project {
-    width: 25%;
+
+.project-photo {
+    width: 80%;
 }
 
-#projects-table-header-platform {
-    width: 15%;
+.project-platforms {
+    font-style: oblique;
+    color: #aaaaaa;
 }
 
-#projects-table-header-link {
-    width: 10%;
+/* .project-desc {
+    padding-top: 1em;
+    width: 80%;
+} */
+
+#project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+
 }
 
-#projects-table-header-description {
-    width: 50%;
+.projects-btn {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #ffffff;
+    text-decoration: underline;
+    font-style: normal;
+    font-size: 1em;
 }
 
-#projects-random-text {
-    font-size: small;
-    color: #979797;
-    text-align: center;
+.projects-btn:hover {
+    color: rgb(255, 231, 126);
+    font-style: oblique;
 }
+
 
 #window-fetch {
     width: 30vw; 
