@@ -136,7 +136,7 @@ a:hover {
 }
 
 .project-hided {
-    display: none;
+    display: none !important;
 }
 .project-details2 {
     display: flex;

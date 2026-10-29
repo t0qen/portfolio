@@ -54,8 +54,27 @@ document.addEventListener('pointerup', () => {
 
 
 // projects
+
+
 const projects = document.querySelectorAll(".project-details");
+const first_project = document.querySelector("#project-camover");
+
 
 for (let i = 0; i < projects.length; i++) {
-    projects[i].classList.add("project-hided");
+    if (projects[i] != first_project) {
+        projects[i].classList.add("project-hided");
+    }
+    
+}
+
+function update_projects(project) {
+    target = document.querySelector("#project-" + project);
+
+    for (let i = 0; i < projects.length; i++) {
+        if (projects[i] != target) {
+            projects[i].classList.add("project-hided");
+        } else {
+            projects[i].classList.remove("project-hided");
+        }
+    }   
 }
