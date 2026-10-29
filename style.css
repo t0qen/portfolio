@@ -161,7 +161,6 @@ a:hover {
     display: flex;
     justify-content: flex-start;
     font-weight: 800;
-    
 }
 
 
@@ -180,10 +179,13 @@ a:hover {
 } */
 
 #project-list {
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 1.5em;
 
 }
 
