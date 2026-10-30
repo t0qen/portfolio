@@ -122,6 +122,17 @@ a:hover {
     min-height: 200px;
 }
 
+.skills1 {
+    font-weight: 900;
+}
+.skills1-list {
+    padding-left: 2em;
+}
+.skills1-1 {
+    font-weight: 600;
+    font-family: "Noto Serif";
+}
+
 #window-projects {
     width: 50vw; 
     height: 25vw;
@@ -240,14 +251,13 @@ a:hover {
     text-decoration: underline;
     font-style: normal;
     font-family: "Noto Serif";
-    font-weight: 600;
     font-size: 1em;
 }
 
 .projects-btn:hover {
     color: rgb(255, 231, 126);
     
-    font-style: oblique;
+    /* font-style: oblique; */
 }
 
 
@@ -264,8 +274,9 @@ a:hover {
     max-width: 250px;
 }
 .fetch-name {
-    font-family: "Martian Mono";
-    font-weight: 250;
+    font-family: "Roboto Serif";
+    font-size: 1.1em;
+    font-weight: 450;
 }
 #fetch-picture {
     image-rendering: pixelated;
