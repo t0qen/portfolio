@@ -163,14 +163,31 @@ a:hover {
     font-weight: 800;
 }
 
+.project-links {
+    padding-top: 0.5em;
+}
 
 .project-photo {
     width: 80%;
+
+    object-fit: contain;
 }
+/* exceptions */
+#project-gps-cat-collar img {
+    height: 90%;
+    /* width: 100%; */
+}
+#project-surf-review img {
+    height: 90%;
+    /* width: 100%; */
+}
+
+
 
 .project-platforms {
     font-style: oblique;
     color: #aaaaaa;
+    padding-bottom: 0.5em;
 }
 
 /* .project-desc {
@@ -185,8 +202,9 @@ a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1.5em;
-
+    row-gap: 0.5em;
+    column-gap: 1.5em;
+    padding-bottom: 1em;
 }
 
 .projects-btn {
