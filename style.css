@@ -1,24 +1,31 @@
-/* global */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 body {
     background: #000000;
     color: #e2e8f0;
     overflow-x: hidden;
     user-select: none;
-    font-family: "JetBrains Mono", monospace;
+    font-family: "JetBrains Mono";
+    /* font-weight: 400;
+    font-style: normal; */
 }
 
+
+
 a {
-    color: rgb(255, 231, 126);
+    color: rgb(255, 234, 141);
+    /* font-family: "Neuton";
+    font-size: 1.2em; */
+    font-weight: 800;
 }
 a:hover {
     font-style: oblique;
+    
 }
 
 .desktop {
@@ -151,6 +158,21 @@ a:hover {
     width: 90%;
 }
 
+.project-details:not(.project-hided) {
+    animation: apparition 0.2s;
+}
+
+@keyframes apparition {
+    from {
+        transform: translateY(-1%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+
 .project-details-text {
     display: flex;
     flex-direction: column;
@@ -158,9 +180,11 @@ a:hover {
 }
 
 .project-title {
+    font-family: "Space Mono" !important;
     display: flex;
+    font-size: 1.5em;
     justify-content: flex-start;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .project-links {
@@ -182,14 +206,10 @@ a:hover {
     /* width: 100%; */
 }
 
-
-
-
-
 .project-platforms {
     font-style: oblique;
     color: #aaaaaa;
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
 }
 
 /* .project-desc {
@@ -219,11 +239,14 @@ a:hover {
     color: #ffffff;
     text-decoration: underline;
     font-style: normal;
+    font-family: "Noto Serif";
+    font-weight: 600;
     font-size: 1em;
 }
 
 .projects-btn:hover {
     color: rgb(255, 231, 126);
+    
     font-style: oblique;
 }
 
@@ -240,7 +263,10 @@ a:hover {
 .fetch-info {
     max-width: 250px;
 }
-
+.fetch-name {
+    font-family: "Martian Mono";
+    font-weight: 250;
+}
 #fetch-picture {
     image-rendering: pixelated;
     width: 90%;
