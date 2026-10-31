@@ -301,12 +301,16 @@ a:hover {
 }
 
 .fetch-info {
-    max-width: 250px;
+    max-width: 300px;
 }
 .fetch-name {
     font-family: "Roboto Serif";
     font-size: 1.1em;
     font-weight: 450;
+}
+#fetch-pseudo {
+    font-size: 0.8em;
+    font-style: oblique;
 }
 #fetch-picture {
     image-rendering: pixelated;
