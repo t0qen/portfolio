@@ -28,6 +28,12 @@ a:hover {
     
 }
 
+
+/* .about-loading {
+    color: #c4c4c4;
+    font-style: oblique;
+} */
+
 .desktop {
     position: relative;
     width: 100%;
@@ -98,8 +104,8 @@ a:hover {
     flex: 1 1 auto;
     display: flex;
     flex-direction: row; 
-    gap: 1rem;
-    padding: 0.7rem;
+    /* gap: 1rem;
+    padding: 0.7rem; */
 }
 
 .window-prompt {
@@ -116,11 +122,11 @@ a:hover {
 #window-skills {
 
     width: 40vw; 
-    height: 30vw;
+    height: 33vw;
     max-width: 600px;
     max-height: 600px;
-    min-width: 300px;
-    min-height: 200px;
+    min-width: 600px;
+    min-height: 400px;
 }
 
 .skills-categ {
@@ -129,6 +135,14 @@ a:hover {
     font-size: 1.2em;
     font-family: "Roboto Serif";
     font-style: oblique;
+}
+.skills-categ:hover {
+    color: rgb(255, 231, 126);
+    cursor: grab;
+}
+
+.skils-list {
+    display: flex;
 }
 
 .skills-categ-list {
@@ -140,6 +154,10 @@ a:hover {
     font-size: 1.2em;
     font-weight: 600;
     font-family: "Pixelify Sans";
+}
+.skills-name:hover {
+    font-weight: 700;
+    cursor: grab;
 }
 
 #window-projects {
@@ -205,6 +223,9 @@ a:hover {
     font-size: 1.5em;
     justify-content: flex-start;
     font-weight: 700;
+}
+.project-title:hover {
+    color: rgb(255, 231, 126);
 }
 
 .project-links {
@@ -304,3 +325,16 @@ a:hover {
     min-width: 500px;
     min-height: 300px;
 }
+
+
+
+.fetching-animation {
+    padding: 1em;
+}
+
+/* https://css-loaders.com/dots/ */
+.dots {
+  clip-path: inset(0 100% 0 0);
+  animation: l1 0.5s steps(4) infinite;
+}
+@keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}

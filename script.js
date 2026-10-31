@@ -78,3 +78,22 @@ function update_projects(project) {
         }
     }   
 }
+
+
+// fetching info animation
+window.addEventListener('DOMContentLoaded', () => {
+
+    const winows_content = document.querySelectorAll(".window-content");
+    const fetching_infos = document.querySelectorAll(".fetching-animation");
+
+    for (let i = 0; i < winows_content.length; i++) {
+        winows_content[i].classList.add("project-hided");
+    }
+
+    setTimeout(() => {
+            for (let i = 0; i < winows_content.length; i++) {
+                winows_content[i].classList.remove("project-hided");
+                fetching_infos[i].classList.add("project-hided");
+            }
+    }, 2000);  
+});
