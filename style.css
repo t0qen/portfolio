@@ -16,6 +16,8 @@ body {
 }
 
 
+/* 1vw = 16.3 px
+1vh = 9.35 px */
 
 a {
     color: rgb(255, 234, 141);
@@ -37,7 +39,7 @@ a:hover {
 .desktop {
     position: relative;
     width: 100%;
-    height: 200vh;
+    height: 150vh;
     background: #000000;
 }
 
@@ -46,28 +48,15 @@ a:hover {
 .window {
     position: absolute;
 
-    width: 40vw; 
-    height: 20vw;
-    max-width: 600px;
-    max-height: 600px;
-    min-width: 100px;
-    min-height: 100px;
-
     background: rgba(0, 0, 0, 1);
     border: 3px solid rgba(255, 255, 255, 1);
     border-radius: 0px;
 
-    overflow: hidden;
     user-select: none;
     display: flex;
     flex-direction: column;
-    opacity: 0; 
-    top: 50%; 
-    left: 50%;
 }
-/* .animate {
-    transition: all 1s cubic-bezier(0.26, 0.37, 0.58, 0.97);
-} */
+
 .window-bar {
     display: flex;
     align-items: center;
@@ -96,23 +85,16 @@ a:hover {
 
 .window-content {
     padding: 20px;
-    font-size: 0.95rem;
-    line-height: 1.5;
     color: #ffffff;
-    user-select: text;
-
-    flex: 1 1 auto;
     display: flex;
     flex-direction: row; 
-    /* gap: 1rem;
-    padding: 0.7rem; */
 }
 
 .window-prompt {
-    font-size: 1rem;
+    font-size: 16px;
     color: #c4c4c4;
     user-select: text;
-    padding: 0.5rem;
+    padding: 8px;
     padding-bottom: 0;
 }
 
@@ -121,20 +103,18 @@ a:hover {
 
 #window-skills {
 
-    width: 40vw; 
-    height: 37vw;
-    max-width: 600px;
-    max-height: 600px;
-    min-width: 600px;
-    min-height: 400px;
+    width: 650px; 
+    height: 460px;
 }
 
 .skills-categ {
     font-weight: 600;
-    padding-left: 0.2em;
-    font-size: 1.2em;
+    padding-left: 3px;
+    padding-top: 2px;
+    font-size: 18px;
     font-family: "Roboto Serif";
     font-style: oblique;
+    letter-spacing: 1px;
 }
 .skills-categ:hover {
     color: rgb(255, 231, 126);
@@ -146,38 +126,36 @@ a:hover {
 }
 
 .skills-categ-list {
-    padding-left: 1.5em;
-    margin-right: 0.5em;
+    padding-left: 24px;
+    margin-right: 6px;
     list-style-type: "- ";
 }
 .skills-name {
-    font-size: 1.2em;
+    font-size: 20px;
     font-weight: 600;
     font-family: "Pixelify Sans";
+    
 }
 .skills-name:hover {
     font-weight: 700;
     cursor: grab;
 }
 
-#window-projects {
-    width: 50vw; 
-    height: 25vw;
-    max-width: 800px;
-    max-height: 450px;
-    min-width: 600px;
-    min-height: 450px;
-}
+/* #window-projects {
+    width: 820px; 
+    height: 430px;
+
+} */
 
 
 #project-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-top: 1em;
-    padding-bottom: 0.5em;
+    justify-content: center;
+    padding-top: 6px;
+    padding-bottom: 8px;
     align-items: center;
-    /* gap: 10em; */
+    gap: 28px;
 }
 
 .project-hided {
@@ -186,14 +164,14 @@ a:hover {
 .project-details2 {
     display: flex;
     justify-content: center;
+    
 }
 
 .project-details {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 1em;
-    width: 90%;
+    gap: 16px;
 }
 
 .project-details:not(.project-hided) {
@@ -215,13 +193,15 @@ a:hover {
     display: flex;
     flex-direction: column;
     width: fit-content;
+    width: 450px;
 }
 
 .project-title {
     font-family: "Space Mono" !important;
     display: flex;
-    font-size: 1.5em;
+    font-size: 24px;
     justify-content: flex-start;
+    letter-spacing: 1px;
     font-weight: 700;
 }
 .project-title:hover {
@@ -229,23 +209,24 @@ a:hover {
 }
 
 .project-links {
-    padding-top: 0.5em;
+    padding-top: 8px;
 }
 
 .project-photo {
-    width: 80%;
-
+    width: 350px;
+    /* width: 80%; */
     object-fit: contain;
 }
-/* exceptions */
+
+/* exceptions
 #project-gps-cat-collar img {
     height: 90%;
     /* width: 100%; */
-}
-#project-surf-review img {
-    height: 90%;
+/* } */
+/* #project-surf-review img { */
+    /* height: 90%; */
     /* width: 100%; */
-}
+/* } */ */
 
 .project-platforms {
     font-style: oblique;
@@ -265,9 +246,9 @@ a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    row-gap: 0.5em;
-    column-gap: 1em;
-    padding-bottom: 1em;
+    row-gap: 6px;
+    column-gap: 16px;
+    width: 800px;
 }
 
 .projects-btn {
@@ -292,12 +273,8 @@ a:hover {
 
 
 #window-fetch {
-    width: 35vw; 
-    height: 22vw;
-    max-width: 600px;
-    max-height: 600px;
-    min-width: 300px;
-    min-height: 300px;
+    width: 490px; 
+    height: 310px;
 }
 
 .fetch-info {
@@ -315,19 +292,15 @@ a:hover {
 #fetch-picture {
     image-rendering: pixelated;
     width: 90%;
-    max-height: 240px;
-    height: auto;
+    height: 200px;
     object-fit: contain;
 }
 
 
 #window-about {
-    width: 60vw; 
-    height: 20vw;
-    max-width: 900px;
-    max-height: 600px;
-    min-width: 500px;
-    min-height: 300px;
+    width: 980px; 
+    height: 320px;
+
 }
 
 

@@ -5,10 +5,10 @@ let offsetX = 0;
 let offsetY = 0;
 
 const initial_windows_pos = [
-    { top: '5%', left: '20%' }, /* fetch */
-    { top: '23%', left: '5%' }, /* projects */
+    { top: '5%', left: '25%' }, /* fetch */
+    { top: '28%', left: '2%' }, /* projects */
     { top: '10%', left: '56%' }, /* skills */
-    { top: '50%', left: '30%' }  /* about */
+    { top: '69%', left: '30%' }  /* about */
 ];
 
 
