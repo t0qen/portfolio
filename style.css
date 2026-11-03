@@ -36,18 +36,26 @@ a:hover {
     font-style: oblique;
 } */
 
-.desktop {
+#desktop {
     position: relative;
     width: 100%;
     height: 150vh;
     background: #000000;
 }
 
+.centered-desk {
+    position: absolute;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    width: 1630px;    
+    height: 935px;
+}
 /* windows global */
 
 .window {
     position: absolute;
-
+    overflow: hidden;
     background: rgba(0, 0, 0, 1);
     border: 3px solid rgba(255, 255, 255, 1);
     border-radius: 0px;
@@ -88,6 +96,8 @@ a:hover {
     color: #ffffff;
     display: flex;
     flex-direction: row; 
+    min-height: 0;
+    overflow: auto;
 }
 
 .window-prompt {
@@ -105,7 +115,32 @@ a:hover {
 
     width: 650px; 
     height: 460px;
+    top: 100px;
+    left: 877px;
 }
+
+#window-projects {
+    /* width: 820px;  */
+    height: 450px;
+    min-width: 800px;
+    top:340px;
+    left: 20px;
+}
+
+#window-fetch {
+    width: 490px; 
+    height: 310px;
+    top:20px;
+    left: 377px;
+}
+
+#window-about {
+    width: 980px; 
+    height: 320px;
+    top:1000px;
+    left: 420px;
+}
+
 
 .skills-categ {
     font-weight: 600;
@@ -141,11 +176,6 @@ a:hover {
     cursor: grab;
 }
 
-/* #window-projects {
-    width: 820px; 
-    height: 430px;
-
-} */
 
 
 #project-content {
@@ -213,7 +243,8 @@ a:hover {
 }
 
 .project-photo {
-    width: 350px;
+    height: 250px;
+    max-width: 400px;
     /* width: 80%; */
     object-fit: contain;
 }
@@ -272,10 +303,6 @@ a:hover {
 }
 
 
-#window-fetch {
-    width: 490px; 
-    height: 310px;
-}
 
 .fetch-info {
     max-width: 300px;
@@ -297,11 +324,7 @@ a:hover {
 }
 
 
-#window-about {
-    width: 980px; 
-    height: 320px;
 
-}
 
 
 

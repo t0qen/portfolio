@@ -1,8 +1,8 @@
 const windows = document.querySelectorAll('.window');
 
 let current_div = null;
-let offsetX = 0;
-let offsetY = 0;
+let offset_x = 0;
+let offset_y = 0;
 
 const initial_windows_pos = [
     { top: '5%', left: '25%' }, /* fetch */
@@ -13,26 +13,25 @@ const initial_windows_pos = [
 
 
 function reset_windows_pos() {
-    windows.forEach((div, index) => {
-        div.classList.add('animate');
-        div.style.opacity = '1';
-        div.style.top = initial_windows_pos[index].top;
-        div.style.left = initial_windows_pos[index].left;
-        div.style.zIndex = "1";
-    });
+    // windows.forEach((div, index) => {
+    //     div.style.top = initial_windows_pos[index].top;
+    //     div.style.left = initial_windows_pos[index].left;
+    //     div.style.zIndex = "1";
+    // });
+
 }
-window.addEventListener('load', () => {
-    setTimeout(reset_windows_pos, 100);
-});
+
+
+window.addEventListener('load', reset_windows_pos);
+
 
 windows.forEach(div => {
 
     div.addEventListener('pointerdown', (e) => {
-        div.classList.remove('animate'); 
         current_div = div; 
         const rect = div.getBoundingClientRect();
-        offsetX = e.clientX - rect.left;
-        offsetY = e.clientY - rect.top;
+        offset_x = e.clientX - rect.left;
+        offset_y = e.clientY - rect.top;
 
         document.querySelectorAll('.window').forEach(d => d.style.zIndex = "1");
         div.style.zIndex = "1000";
@@ -41,15 +40,16 @@ windows.forEach(div => {
 
 document.addEventListener('pointermove', (e) => {
     if (!current_div) return;
-    let newX = e.clientX - offsetX + window.scrollX;
-    let newY = e.clientY - offsetY + window.scrollY;
-    current_div.style.left = newX + 'px';
-    current_div.style.top = newY + 'px';
+    let new_x = e.clientX - offset_x + window.scrollX;
+    let new_y = e.clientY - offset_y + window.scrollY;
+    current_div.style.left = new_x + 'px';
+    current_div.style.top = new_y + 'px';
 });
 
 document.addEventListener('pointerup', () => {
     current_div = null;
 });
+
 
 
 
@@ -83,6 +83,8 @@ function update_projects(project) {
 // fetching info animation
 window.addEventListener('DOMContentLoaded', () => {
 
+    setTimeout(reset_windows_pos, 100);
+
     const winows_content = document.querySelectorAll(".window-content");
     const fetching_infos = document.querySelectorAll(".fetching-animation");
 
@@ -95,5 +97,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 winows_content[i].classList.remove("project-hided");
                 fetching_infos[i].classList.add("project-hided");
             }
+            //random things
+            document.querySelector("#first-project-btn").style.color = rgb(255, 231, 126);
     }, 2000);  
 });
