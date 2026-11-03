@@ -97,7 +97,7 @@ a:hover {
     display: flex;
     flex-direction: row; 
     min-height: 0;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .window-prompt {
@@ -116,28 +116,27 @@ a:hover {
     width: 650px; 
     height: 460px;
     top: 100px;
-    left: 877px;
+    right: 35px;
 }
 
 #window-projects {
-    /* width: 820px;  */
     height: 450px;
-    min-width: 800px;
-    top:340px;
-    left: 20px;
+    width: 900px;
+    top: 340px;
+    left: 35px;
 }
 
 #window-fetch {
     width: 490px; 
     height: 310px;
-    top:20px;
-    left: 377px;
+    top: 20px;
+    left: 445px;
 }
 
 #window-about {
     width: 980px; 
     height: 320px;
-    top:1000px;
+    top: 1000px;
     left: 420px;
 }
 
