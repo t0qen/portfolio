@@ -43,7 +43,7 @@ a:hover {
     background: #000000;
 }
 
-.centered-desk {
+#centered-desk {
     position: absolute;
     left: 50%;
     top: 50vh;

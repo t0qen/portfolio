@@ -40,10 +40,9 @@ windows.forEach(div => {
 
 document.addEventListener('pointermove', (e) => {
     if (!current_div) return;
-    let new_x = e.clientX - offset_x + window.scrollX;
-    let new_y = e.clientY - offset_y + window.scrollY;
-    current_div.style.left = new_x + 'px';
-    current_div.style.top = new_y + 'px';
+    const r = document.querySelector('#centered-desk').getBoundingClientRect();
+    current_div.style.left = (e.clientX - offset_x - r.left) + 'px';
+    current_div.style.top  = (e.clientY - offset_y - r.top) + 'px';
 });
 
 document.addEventListener('pointerup', () => {
