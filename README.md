@@ -1,14 +1,12 @@
-## My very own portfolio
-**accessible at [https://aymeric-camaret.com](https://aymeric-camaret.com)**
+<div align="center">
 
-### What ?
-It contains my personal infos, my skills and my current projects.
+  ### my very own **portfolio** 💾️
+  My personal website acting as my résumé, showing my projects, skills, and personal infos
 
-### Why ?
-It helps introduce myself and my work online.
+  [features](#features)  - [how it's done](#hiw) - [about](#about) - [screenshots](#screenshots)
+</div>
 
-### How ?
-Pure html/js/css
+---------------
 
-### Preview
-<img width="1630" height="1870" alt="Screenshot 2026-10-25 at 13-40-49 Aymeric CAMARET" src="https://github.com/user-attachments/assets/5294fbf5-8260-4a21-94c1-ed821556c772" />
+
+### ✅️ features <a id='features'></a>
