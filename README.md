@@ -20,6 +20,32 @@
 ### 💻️ how it's done <a id='hiw'></a>
 It's vanilla html/css/js code, without the help of any framework.
 
+**Edit it yourself :**
+
+```bash
+cd ~
+git clone https://github.com/t0qen/portfolio
+cd portfolio
+```
+Here you can easly modify the html/css/js.
+The [assets](https://github.com/t0qen/portfolio/tree/master/assets) folder contains all images related to README, and the [images](https://github.com/t0qen/portfolio/tree/master/images) contains every images that are on the **website**.
+
+**Run it yourself :**
+
+Just go in *~/portfolio* (created above) and open *index.html* in your fav browser.
+I personally host it with an [nginx](https://nginx.org/en/) server, here is my docker compose :
+```docker-compose
+services:
+  web:
+    image: nginx:alpine
+    container_name: nginx
+    restart: unless-stopped
+    ports:
+      - "8070:80"
+    volumes:
+      - /srv/data/utility/website/srv:/usr/share/nginx/html:ro
+```
+Then, the website is exposed with a cloudflare tunnel.
 
 ### ✏️ about <a id='about'></a>
 **Responsive design**
