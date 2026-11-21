@@ -20,7 +20,7 @@ body {
 1vh = 9.35 px */
 
 a {
-    color: rgb(255, 234, 141);
+    color: #9ece6a;
     /* font-family: "Neuton";
     font-size: 1.2em; */
     font-weight: 800;
@@ -43,15 +43,16 @@ a:hover {
     font-family: "Source Sans 3";
     user-select: text;
     z-index: 1000000;
-
     border-radius: 30px;
     padding: 10px;
     padding-left: 17px;
     padding-right: 17px;
-    background-color: #ffffff;
+    background-color: #c0caf59f;
+    backdrop-filter: blur(4px);
     line-height: 23px;
     font-size: 21px;
     color: #000000;
+    box-shadow: 0px 0px 100px 12px rgba(0, 0, 0, 0.595);
 }
 #contact-title {
     font-weight: 800;
@@ -62,11 +63,8 @@ a:hover {
     font-weight: 700;
 }
 /* .contact-infos {
-    
-
 }
 #contact-mail {
-
 }
 #contact-discord {
 } */
@@ -75,7 +73,7 @@ a:hover {
     position: relative;
     width: 100%;
     height: 150vh;
-    background: #000000;
+    background: #7aa2f7;
 }
 
 #centered-desk {
@@ -92,13 +90,14 @@ a:hover {
     backdrop-filter: blur(7px);
     position: absolute;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.811);
-    border: 3px solid rgba(255, 255, 255, 1);
-    border-radius: 0px;
+    background: #1a1b26;
+    border: 0px solid rgba(255, 255, 255, 1);
+    border-radius: 20px;
 
     user-select: none;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 0px 50px black;
 }
 
 .window-bar {
@@ -106,7 +105,8 @@ a:hover {
     align-items: center;
     justify-content: center;
     padding: 8px 12px;
-    border-bottom: 3px solid rgba(255, 255, 255, 1);
+    background-color: #41486858;
+    border-bottom: 0px solid rgba(255, 255, 255, 1);
     cursor: grab;
 }
 
@@ -186,7 +186,7 @@ a:hover {
     letter-spacing: 1px;
 }
 .skills-categ:hover {
-    color: rgb(255, 231, 126);
+    color: #bb9af7;
     cursor: grab;
 }
 
@@ -269,7 +269,7 @@ a:hover {
     font-weight: 700;
 }
 .project-title:hover {
-    color: rgb(255, 231, 126);
+    color: #bb9af7;
 }
 
 .project-links {
@@ -281,6 +281,18 @@ a:hover {
     max-width: 400px;
     /* width: 80%; */
     object-fit: contain;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px #9aa5ce32;
+  /* -webkit-mask-image:
+    linear-gradient(to right, transparent, black 5%, black 95%, transparent),
+    linear-gradient(to bottom, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-composite: source-in;
+
+  mask-image:
+    linear-gradient(to right, transparent, black 5%, black 95%, transparent),
+    linear-gradient(to bottom, transparent, black 5%, black 95%, transparent);
+  mask-composite: intersect; */
+
 }
 
 /* exceptions
@@ -331,7 +343,7 @@ a:hover {
 }
 
 .projects-btn:hover {
-    color: rgb(255, 231, 126);
+    color: #bb9af7;
     
     /* font-style: oblique; */
 }
