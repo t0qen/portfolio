@@ -36,6 +36,41 @@ a:hover {
     font-style: oblique;
 } */
 
+#contact {
+    right: 20px;
+    bottom: 20px;
+    position:absolute;
+    font-family: "Source Sans 3";
+    user-select: text;
+    z-index: 1000000;
+
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 17px;
+    padding-right: 17px;
+    background-color: #ffffff;
+    line-height: 23px;
+    font-size: 21px;
+    color: #000000;
+}
+#contact-title {
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 1px;
+}
+.contact-infos-name {
+    font-weight: 700;
+}
+/* .contact-infos {
+    
+
+}
+#contact-mail {
+
+}
+#contact-discord {
+} */
+
 #desktop {
     position: relative;
     width: 100%;
@@ -54,9 +89,10 @@ a:hover {
 /* windows global */
 
 .window {
+    backdrop-filter: blur(7px);
     position: absolute;
     overflow: hidden;
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.811);
     border: 3px solid rgba(255, 255, 255, 1);
     border-radius: 0px;
 
@@ -70,7 +106,6 @@ a:hover {
     align-items: center;
     justify-content: center;
     padding: 8px 12px;
-    background: rgba(0, 0, 0, 0.99);
     border-bottom: 3px solid rgba(255, 255, 255, 1);
     cursor: grab;
 }

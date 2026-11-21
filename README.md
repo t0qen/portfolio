@@ -50,7 +50,6 @@ Then, the website is exposed with a cloudflare tunnel.
 ### ✏️ about <a id='about'></a>
 **Responsive design**
 
-
 I hadn't the level and the patience to create a natural rasponsive design so instead of make something bad visually I just set everything to a fixed size in pixel and made possible to zoom/dezoom.
 
 **Why did I made this ?**
