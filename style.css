@@ -52,8 +52,9 @@ a:hover {
     line-height: 23px;
     font-size: 21px;
     color: #000000;
-    box-shadow: 0px 0px 100px 12px rgba(0, 0, 0, 0.595);
-    border: solid 5px #c0caf5bb;
+    /* box-shadow: 0px 0px 100px 12px rgba(0, 0, 0, 0.595); */
+    /* border: solid 5px #c0caf5bb; */
+    /* box-shadow: 5px 5px 0px #c0caf549; */
     transition: scale 0.1s ease;
 }
 
@@ -142,7 +143,7 @@ a:hover {
     display: flex;
     flex-direction: row; 
     min-height: 0;
-
+    flex: 1;
     background: #1a1b26;
     /* overflow: auto; */
 }
@@ -236,13 +237,16 @@ a:hover {
 
 
 #project-content {
+    width: 100%; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-top: 6px;
-    padding-bottom: 8px;
+    justify-content: space-between;
     align-items: center;
-    gap: 28px;
+    /* gap: 28px; */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    /* align-items: center; */
+    /* gap: 28px; */
 }
 
 .project-hided {
@@ -251,7 +255,6 @@ a:hover {
 .project-details2 {
     display: flex;
     justify-content: center;
-    
 }
 
 .project-details {
@@ -281,6 +284,7 @@ a:hover {
     flex-direction: column;
     width: fit-content;
     width: 450px;
+
 }
 
 .project-title {
