@@ -58,6 +58,16 @@ I hadn't the level and the patience to create a natural rasponsive design so ins
 To quickly introduce myself on the internet and share my works and my skills. After more dev and polish it might even be showed to a future employer.
 
 ### 📷️ screenshots <a id='screenshots'></a>
+**New look**
+
+
+<img src='assets/4.png'>
+<img src='assets/5.png'>
+<img src='assets/6.png'>
+------------
+
+
+**Old one**
 <img src='assets/1.png'>
 <img src='assets/2.png'>
 <img src='assets/3.png'>
