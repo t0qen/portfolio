@@ -54,6 +54,11 @@ a:hover {
     color: #000000;
     box-shadow: 0px 0px 100px 12px rgba(0, 0, 0, 0.595);
     border: solid 5px #c0caf5bb;
+    transition: scale 0.1s ease;
+}
+
+#contact:hover {
+    scale: 1.01;
 }
 #contact-title {
     font-weight: 800;
@@ -92,8 +97,8 @@ a:hover {
     position: absolute;
     overflow: hidden;
     background: #1a1b26;
-    border: 0px solid rgba(255, 255, 255, 1);
-    border-radius: 20px;
+    border: 0px solid rgba(255, 255, 255, 0.562);
+    border-radius: 25px;
 
     user-select: none;
     display: flex;
@@ -103,11 +108,11 @@ a:hover {
 
 .window-bar {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     padding: 8px 12px;
     background-color: #41486858;
-    border-bottom: 0px solid rgba(255, 255, 255, 1);
+    border-bottom: 0px solid rgba(255, 255, 255, 0.519);
     cursor: grab;
     margin: 10px;
     margin-bottom: 0px;
@@ -119,8 +124,9 @@ a:hover {
 }
 
 .window-title {
-    font-size: 1rem;
+    font-size: 18px;
     letter-spacing: 0.3px;
+    padding-left: 5px;
     color: #cbd5e1;
 }
 
@@ -270,14 +276,14 @@ a:hover {
 .project-title {
     font-family: "Space Mono" !important;
     display: flex;
-    font-size: 24px;
+    font-size: 36px;
     justify-content: flex-start;
     letter-spacing: 1px;
     font-weight: 700;
 }
-.project-title:hover {
+/* .project-title:hover {
     color: #bb9af7;
-}
+} */
 
 .project-links {
     padding-top: 8px;
@@ -310,12 +316,12 @@ a:hover {
 /* #project-surf-review img { */
     /* height: 90%; */
     /* width: 100%; */
-/* } */ */
+/* } */ 
 
 .project-platforms {
     font-style: oblique;
-    color: #aaaaaa;
-    padding-bottom: 1em;
+    color: #9aa5ce;
+    padding-bottom: 10px;
 }
 
 /* .project-desc {
@@ -347,10 +353,12 @@ a:hover {
     font-style: normal;
     font-family: "Roboto Serif";
     font-size: 1em;
+    transition: scale 0.1s ease;
 }
 
 .projects-btn:hover {
     color: #bb9af7;
+    scale: 1.05;
     
     /* font-style: oblique; */
 }
