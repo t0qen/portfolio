@@ -39,7 +39,7 @@ a:hover {
 #contact {
     right: 20px;
     bottom: 20px;
-    position:absolute;
+    position: fixed;
     font-family: "Source Sans 3";
     user-select: text;
     z-index: 1000000;
@@ -61,12 +61,12 @@ a:hover {
     scale: 1.01;
 }
 #contact-title {
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
     padding-bottom: 1px;
 }
 .contact-infos-name {
-    font-weight: 700;
+    font-weight: 600;
 }
 /* .contact-infos {
 }
@@ -162,7 +162,7 @@ a:hover {
 #window-skills {
 
     width: 650px; 
-    height: 460px;
+    height: 550px;
     top: 100px;
     right: 35px;
 }
@@ -175,10 +175,10 @@ a:hover {
 }
 
 #window-fetch {
-    width: 490px; 
+    width: 510px; 
     height: 310px;
     top: 20px;
-    left: 445px;
+    left: 425px;
 }
 
 #window-about {
@@ -188,6 +188,14 @@ a:hover {
     left: 420px;
 }
 
+.about-opinion {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-shadow: 0px 0px 30px #c0caf55f;
+    padding-bottom: 5px;
+    font-family: "Roboto Serif";
+}
 
 .skills-categ {
     font-weight: 600;
@@ -197,6 +205,7 @@ a:hover {
     font-family: "Roboto Serif";
     font-style: oblique;
     letter-spacing: 1px;
+    text-shadow: 0px 0px 30px #c0caf585;
 }
 .skills-categ:hover {
     color: #bb9af7;
@@ -216,10 +225,11 @@ a:hover {
     font-size: 20px;
     font-weight: 600;
     font-family: "Pixelify Sans";
+    transition: scale 0.1s ease;
     
 }
 .skills-name:hover {
-    font-weight: 700;
+    scale: 1.05;
     cursor: grab;
 }
 
@@ -280,6 +290,8 @@ a:hover {
     justify-content: flex-start;
     letter-spacing: 1px;
     font-weight: 700;
+    line-height: 1;
+    margin-bottom: 3px;
 }
 /* .project-title:hover {
     color: #bb9af7;
@@ -366,7 +378,7 @@ a:hover {
 
 
 .fetch-info {
-    max-width: 300px;
+    width: 300px;
 }
 .fetch-name {
     font-family: "Roboto Serif";
@@ -379,8 +391,9 @@ a:hover {
 }
 #fetch-picture {
     image-rendering: pixelated;
-    width: 90%;
-    height: 200px;
+    padding-right: 10px;
+    height: 210px;
+    border-radius: 20px;
     object-fit: contain;
 }
 
@@ -390,7 +403,7 @@ a:hover {
 
 
 .fetching-animation {
-    padding: 1em;
+    padding: 20px;
 }
 
 /* https://css-loaders.com/dots/ */
